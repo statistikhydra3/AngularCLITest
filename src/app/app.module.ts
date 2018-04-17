@@ -9,6 +9,8 @@ import { CdkTableModule } from '@angular/cdk/table';
 import { AppComponent } from './app.component';
 import { TableTestComponent } from './table-test/table-test.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { TableTestComponent } from './table-test/table-test.component';
     FormsModule,
     MatTableModule, 
     MatPaginatorModule, 
-    CdkTableModule
+    CdkTableModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
