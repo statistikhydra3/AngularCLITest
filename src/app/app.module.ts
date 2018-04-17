@@ -7,7 +7,7 @@ import { MatTableModule, MatPaginatorModule} from '@angular/material';
 import { CdkTableModule } from '@angular/cdk/table';
 
 import { AppComponent } from './app.component';
-import { TableTestComponent } from './table-test/table-test.component';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -15,7 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
-    TableTestComponent
+    routingComponents
   ],
   imports: [
     BrowserModule,
@@ -25,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatTableModule, 
     MatPaginatorModule, 
     CdkTableModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
